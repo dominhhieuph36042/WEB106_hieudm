@@ -1,0 +1,21 @@
+
+.div0{
+    border: 1px solid;
+    width: 100% auto;
+    height: 400px auto;
+    color: aliceblue;
+    background-color: black;
+}
+
+.divtr{
+    display: flex;
+    justify-content: space-between;
+}
+
+.divcon{
+    border: 1px solid;
+    width: 25% ;
+    height: 424px;
+    color: aliceblue;
+    background-color: black;
+}
