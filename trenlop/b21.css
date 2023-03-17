@@ -1,0 +1,61 @@
+header{
+    border: 1px solid;
+    width: 100%;
+    height: 90px;
+    background-color: black;
+}
+
+.li-pc{
+    list-style: none;
+    display: inline-block;
+    padding: 18px   ;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+li:hover{
+   background-color: red;
+}
+
+.ul{
+    display: block;
+}
+
+
+
+.nav-moblie{
+    display: none;
+}
+/*Mobile*/
+@media all and (max-width: 740px) {
+    .ul{
+        display: none;
+    }
+
+    .nav-moblie{
+        display: block;
+        border: 1px;
+        background-color: antiquewhite;
+    }
+
+    .li-mobile{
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+
+
+/*Tablet*/
+@media all and (min-width:740px) and (max-width:1024px) {
+    ul{
+        display: none;
+    }
+}
+
+
+

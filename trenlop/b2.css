@@ -1,0 +1,29 @@
+nav{
+    background-color: black;
+}
+
+nav a {
+    display: inline-block;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a.active{
+    background-color: aquamarine;
+}
+
+@media all and (max-width: 768px) {
+    h2{
+        text-align: center;
+        font-size: 7vw;
+    }
+
+    nav a{
+        width: 100%;
+    }
+}
+
+
+

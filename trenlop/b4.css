@@ -1,0 +1,42 @@
+.main{
+    display: flex;
+    margin: 0 auto;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+.item{
+    margin: 0 auto;
+    border: 1px solid;
+    width: 20%;
+    height: 348px;
+}
+
+.span{
+    border: 1px solid;
+    width: 20%;
+    text-align: center;
+    background-color: bisque;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+
+/*Mobile*/
+@media all and (max-width:748px) {
+    .main{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .item{
+        height: 176px;
+        margin-top: 10px;
+    }
+
+    .span{
+        width: 15%;
+        font-size: 8px;
+    }
+}
