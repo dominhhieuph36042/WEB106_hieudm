@@ -1,0 +1,13 @@
+.main{
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: bisque;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+.main .main-item{
+     font-weight: bold;
+}
