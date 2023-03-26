@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    list-style: none;
+    position: relative;
+    background-color: antiquewhite;
+    padding: 12px 20px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu>li{
+    padding-left: 30px;
+}
+
+.menu>li>a{
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+
+.open-menu, .close-menu{
+    position: absolute;
+    color: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu{
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+}
+
+.close-menu{
+    top: 20px;
+    right: 20px;
+}
+
+#check{display: none;}
+
+.logo{
+    display: block;
+    font-weight: bold;
+    font-size: 35px
+}
+
+
+.home{
+    display: none;
+}
+
+.img{
+    background-image: url(./images/massege1.jpg);
+    width: 100%;
+    height: 580px;
+   cursor: pointer;
+}
+
+.img-container{
+    padding: 15px 0;
+    font-size: 30px ;
+    font-weight: bold;
+    font-style: italic;
+    color: brown;
+    transition: 0.6s;
+}
+
+.b{
+    font-size: 20px;
+    font-weight: bold;
+    color: currentcolor;
+    transition: 0.6s;
+}
+
+.menu{
+    font-size: 20px;
+    transition: 0.6s;
+    line-height: 46px;
+}
+
+.main-contain{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item-conteain{
+    width: 21%;
+    height: 550px;
+}
+
+.tht-contain{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+    background-color: black;
+}
+
+.item-footer{
+    color: aliceblue;
+    padding-bottom: 30px;
+}
+.item-footerlogo{
+    font-size: 25px;
+    padding-top: 30px;
+    color: aliceblue;
+    padding-bottom: 30px;
+    transition: 0.6s;
+}
+
+/*mobile*/
+@media all and (max-width: 748px) {
+    .logo{
+        font-size: 25px;
+        transition: 0.6s;
+    }
+
+ .menu{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color:antiquewhite;
+ }
+
+ 
+
+ .menu>li{margin-top: 40px;}
+ .menu>li>a{padding: 10px;}
+
+   
+    #check:checked ~ .menu{right: 0;}
+    .open-menu, .close-menu{display: block;}
+    
+    .img-container{
+        font-size: 20px;
+        transition: 0.6s;
+    }
+    .b{
+        font-size: 16px;
+        transition: 0.6s;
+    }
+
+    .main-contain{
+        flex-direction: column; 
+    }
+
+    .item-conteain{
+        width: 56%;
+        margin-bottom: 60px;
+    }
+
+    b{
+        font-size: 13px;
+        transition: 0.6s;
+    }
+
+    .tht-contain{
+        font-size: 11px;
+        transition: 0.6s;
+    }
+
+   .item-footer{
+    font-size: 13px;
+    transition: 0.6s;
+   }
+
+   .item-footerlogo{
+    font-size: 18px;
+    transition: 0.6s;
+   }
+}
+
+/*Tablet*/
+@media all and (min-width: 748px) and (max-width:1024px) {
+    .logo{
+        font-size: 30px;
+        transition: 0.6s;
+    }
+    
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: antiquewhite;
+     }
+    
+     .menu>li{margin-top: 40px;}
+     .menu>li>a{padding: 10px;}
+
+        .open-menu, .close-menu {display: block;}
+        #check:checked ~ .menu{right: 0;}
+    
+        
+        .img-container{
+            transition: 0.6s;
+        }
+        .b{
+            transition: 0.6s;
+        }
+    
+        .main-contain{
+            flex-direction: column; 
+        }
+    
+        .item-conteain{
+            width: 56%;
+            margin-bottom: 60px;
+        }
+    
+        b{
+            transition: 0.6s;
+        }
+    
+        .tht-contain{
+            transition: 0.6s;
+        }
+    
+       .item-footer{
+        transition: 0.6s;
+       }
+    
+       .item-footerlogo{
+        transition: 0.6s;
+       }
+}
