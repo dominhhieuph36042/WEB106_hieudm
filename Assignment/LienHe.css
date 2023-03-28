@@ -67,31 +67,26 @@
     transition: 0.6s;
     line-height: 46px;
 }
-.img{
-    background-image: url(./massege1.jpg);
-    width: 100%;
-    height: 580px;
-   cursor: pointer;
-}
 
-.img-container{
-    padding: 15px 0;
-    font-size: 30px ;
-    font-weight: bold;
-    font-style: italic;
-    color: brown;
-    transition: 0.6s;
-}
-
-.b{
-    font-size: 20px;
-    font-weight: bold;
-    color: currentcolor;
-    transition: 0.6s;
+.main-flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 
-  .main-footer{
+
+
+.item-flex3,.item-flex4,.item-flex5,.item-flex6,.item-flex7,
+.item-flex2,
+.item-flex1{
+ text-align: center;
+}
+
+.main-footer{
     border: 1px solid;
     width: 100% ;
     display: flex;
@@ -222,3 +217,5 @@
         transition: 0.6s;
        }
 }
+
+
