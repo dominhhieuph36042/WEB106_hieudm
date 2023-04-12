@@ -13,24 +13,32 @@
 
 </head>
 <body>
-    <header>
-        <nav>
-          <ul class="nav-bar">
-           <li class="logo"><u>DOHIEU <i class="fa fa-home" style="cursor: pointer;"><a href="./TrangChu.html"></a></i></u></li>
-             <input type="checkbox" id="check">
-             <span class="menu">
-               <li><a target="_blank" href="./TrangChu.html">Trang chủ</a></li>
-               <li><a href="./SanPham.html">Sản phẩm </a></li>
-               <li><a href="./LienHe.html">Liên hệ</a></li>
-               <li>
-                <input type="search" placeholder="Search" style="height: 40px; width: 250px;">
-               </li>
-               <label for="check" class="close-menu"><i class="fas fa fa-times"></i></label>
-             </span>
-             <label for="check" class="open-menu"><i class="fas fa fa-bars"></i></label>
-          </ul>
-        </nav>
-      </header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">DOHIEU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./TrangChu.html">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./SanPham.html">Sản phẩm</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./LienHe.html">Liên hệ</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
       <div class="main-flex">
         <div class="item-flex1" style=" text-align: center;">
